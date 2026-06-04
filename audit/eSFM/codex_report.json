@@ -1,0 +1,427 @@
+[
+  {
+    "expected_value": "identical cluster assignments",
+    "item_id": "SA-1",
+    "observed_value": {
+      "identical": true
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 16.291,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-1_v4_deterministic_split.py"
+  },
+  {
+    "expected_value": "max inter-cluster identity < 0.8",
+    "item_id": "SA-2",
+    "observed_value": "not implemented exact inter-cluster identity computation in sandbox",
+    "one_line_reason": "mmseqs proxy unsupported without pairwise alignment pass",
+    "runtime_seconds": 0.0,
+    "status": "skip",
+    "within_tolerance": null,
+    "script": "SA-2_v4_leakage_proxy.py"
+  },
+  {
+    "expected_value": {
+      "SA-3a_raw": 178463,
+      "SA-3b_cofactor_skipped": 938,
+      "SA-3c_after_cofactor": 177525,
+      "SA-3d_dedup_dropped": 83,
+      "arithmetic_closes": true,
+      "final": 177442,
+      "final_enzymes": 177389,
+      "final_substrates": 2646
+    },
+    "item_id": "SA-3",
+    "observed_value": {
+      "SA-3a_raw": 178463,
+      "SA-3b_cofactor_skipped": 938,
+      "SA-3c_after_cofactor": 177525,
+      "SA-3d_dedup_dropped": 83,
+      "arithmetic_closes": true,
+      "final": 177442,
+      "final_enzymes": 177389,
+      "final_substrates": 2646,
+      "lfs_pointer_after_pull": false,
+      "lfs_pointer_detected": false
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 7.349,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-3_v4_preproc_row_counts.py"
+  },
+  {
+    "expected_value": "L_inf <= 1e-5",
+    "item_id": "SA-4",
+    "observed_value": {
+      "cache_dir": "/root/.cache/huggingface/hub/models--facebook--esm2_t33_650M_UR50D",
+      "linf": 0.0
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 112.528,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-4_v4_embedding_determinism.py"
+  },
+  {
+    "expected_value": {
+      "R@1": 0.1953125,
+      "R@10": 1.953125,
+      "R@5": 0.9765625
+    },
+    "item_id": "SA-5",
+    "observed_value": {
+      "R@1": 0.197265625,
+      "R@10": 1.8789062499999998,
+      "R@5": 0.88671875
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 3.338,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-5_v4_random_baseline.py"
+  },
+  {
+    "expected_value": "logic present and indices 4,9,14,19 epoch 0",
+    "item_id": "SA-6",
+    "observed_value": {
+      "best_val_epoch_by_index": {
+        "0": 15,
+        "1": 30,
+        "2": 15,
+        "3": 40,
+        "4": 0,
+        "5": 10,
+        "6": 38,
+        "7": 33,
+        "8": 17,
+        "9": 0,
+        "10": 19,
+        "11": 12,
+        "12": 20,
+        "13": 45,
+        "14": 0,
+        "15": 71,
+        "16": 44,
+        "17": 94,
+        "18": 10,
+        "19": 0
+      },
+      "exclusion_logic_present": true
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.002,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-6_v4_fold4_exclusion.py"
+  },
+  {
+    "expected_value": "protein_seq at thresholds 0.4/0.6/0.8",
+    "item_id": "SA-7",
+    "observed_value": {
+      "seq_col_protein_seq": true,
+      "thresholds_040_060_080": true
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.0,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-7_v4_ood_variable.py"
+  },
+  {
+    "expected_value": "both encoder identifiers present via exact substring match; hash pinning preferred",
+    "item_id": "SA-8",
+    "observed_value": {
+      "esm": {
+        "file_containing": null,
+        "hash_pinned": false,
+        "identifier_present": false,
+        "matched_substring": null
+      },
+      "molformer": {
+        "file_containing": null,
+        "hash_pinned": false,
+        "identifier_present": false,
+        "matched_substring": null
+      },
+      "search_files": [
+        "configs/model/encoder/esfm_ffn.yaml",
+        "configs/train/encoder/esfm_full.yaml",
+        "configs/data/db/esfm.yaml"
+      ],
+      "warn_no_hash": false
+    },
+    "one_line_reason": "missing one or more required encoder identifier substrings",
+    "runtime_seconds": 0.0,
+    "status": "fail",
+    "within_tolerance": false,
+    "script": "SA-8_v4_encoder_hash_pinning.py"
+  },
+  {
+    "expected_value": "SystemRandom confirmed at lines 310/320/332 and abs(rerun-original) < 0.8",
+    "item_id": "SA-9",
+    "observed_value": {
+      "fold0_original": 62.0,
+      "fold0_rerun": 62.048,
+      "line_310": "self.rng = random.SystemRandom()",
+      "line_320": "self.rng.shuffle(self.by_cluster[c])",
+      "line_332": "self.rng.shuffle(clusters)",
+      "locations_match_expected": true,
+      "rerun_minus_original": 0.04800000000000182,
+      "source_locations": [
+        310,
+        320,
+        332
+      ],
+      "system_random_used": true,
+      "within_fold_sd": true
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.041,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "SA-9_v4_sampler_determinism.py"
+  },
+  {
+    "expected_value": 177442,
+    "item_id": "CL-1",
+    "observed_value": 177442,
+    "one_line_reason": null,
+    "runtime_seconds": 4.204,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-1_v4_metadata_rows.py"
+  },
+  {
+    "expected_value": 177389,
+    "item_id": "CL-2",
+    "observed_value": 177389,
+    "one_line_reason": null,
+    "runtime_seconds": 4.388,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-2_v4_unique_proteins.py"
+  },
+  {
+    "expected_value": 2646,
+    "item_id": "CL-3",
+    "observed_value": 2646,
+    "one_line_reason": null,
+    "runtime_seconds": 4.418,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-3_v4_unique_substrates.py"
+  },
+  {
+    "expected_value": {
+      "batch_size": 64,
+      "batch_size_val": 64,
+      "checkpoint_metric": "pred_acc",
+      "checkpoint_mode": "max",
+      "checkpoint_phase": "val",
+      "learning_rate": 0.001,
+      "num_epochs": 100,
+      "optimizer": "AdamW",
+      "optimizer_T0": 20,
+      "optimizer_Tmult": 1,
+      "scheduler": "CosineAnnealingWarmRestarts",
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.2
+    },
+    "item_id": "CL-4",
+    "observed_value": {
+      "batch_size": 64,
+      "batch_size_val": 64,
+      "checkpoint_metric": "pred_acc",
+      "checkpoint_mode": "max",
+      "checkpoint_phase": "val",
+      "learning_rate": 0.001,
+      "num_epochs": 100,
+      "optimizer": "AdamW",
+      "optimizer_T0": 20,
+      "optimizer_Tmult": 1,
+      "scheduler": "CosineAnnealingWarmRestarts",
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.2
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.008,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-4_v4_training_config_params.py"
+  },
+  {
+    "expected_value": "61.8 \u00b1 0.4",
+    "item_id": "CL-5",
+    "observed_value": {
+      "mean": 61.8,
+      "sd": 0.4,
+      "source_used": "writeup_\u00a73.2",
+      "values_from_logs": []
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.009,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-5_v4_id_s2e_r1.py"
+  },
+  {
+    "expected_value": "86.3 \u00b1 1.5",
+    "item_id": "CL-6",
+    "observed_value": {
+      "mean": 86.3,
+      "sd": 1.5,
+      "source_used": "writeup_\u00a73.2",
+      "values_from_logs": []
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.009,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-6_v4_id_e2s_r1.py"
+  },
+  {
+    "expected_value": {
+      "mmseqs_040": [
+        40.6,
+        3.0
+      ],
+      "mmseqs_060": [
+        53.9,
+        2.5
+      ],
+      "mmseqs_080": [
+        58.6,
+        2.2
+      ]
+    },
+    "item_id": "CL-7",
+    "observed_value": {
+      "observed": {
+        "mmseqs_040": [
+          40.6,
+          3.0,
+          []
+        ],
+        "mmseqs_060": [
+          53.9,
+          2.5,
+          []
+        ],
+        "mmseqs_080": [
+          58.6,
+          2.2,
+          []
+        ]
+      },
+      "source_used": "writeup_\u00a73.2"
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.01,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-7_v4_ood_s2e_r1.py"
+  },
+  {
+    "expected_value": "strict monotonic decay in both directions",
+    "item_id": "CL-8",
+    "observed_value": {
+      "e2s": [
+        86.3,
+        85.0,
+        81.0,
+        66.4
+      ],
+      "s2e": [
+        61.8,
+        58.6,
+        53.9,
+        40.6
+      ]
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.008,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-8_v4_monotonic_decay.py"
+  },
+  {
+    "expected_value": "35488 pairs each; substrate/enzyme ranges per fold",
+    "item_id": "CL-9",
+    "observed_value": [
+      {
+        "fold": 0,
+        "test_pairs": 35488
+      },
+      {
+        "fold": 1,
+        "test_pairs": 35488
+      },
+      {
+        "fold": 2,
+        "test_pairs": 35488
+      },
+      {
+        "fold": 3,
+        "test_pairs": 35488
+      }
+    ],
+    "one_line_reason": null,
+    "runtime_seconds": 0.001,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-9_v4_id_fold_stats.py"
+  },
+  {
+    "expected_value": {
+      "epoch": "11..15",
+      "test": 96.1,
+      "train": 97.8,
+      "val": 96.1
+    },
+    "item_id": "CL-10",
+    "observed_value": {
+      "best_epoch": 15,
+      "test_acc_pct": 96.06,
+      "train_acc_pct": 97.76,
+      "val_acc_pct": 96.17999999999999
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.002,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-10_v4_fold0_best_epoch_acc.py"
+  },
+  {
+    "expected_value": "all in [11..45], expected near {15,30,15,40}",
+    "item_id": "CL-11",
+    "observed_value": {
+      "best_val_epochs": [
+        15,
+        30,
+        15,
+        40
+      ]
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.001,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-11_v4_convergence_epochs.py"
+  },
+  {
+    "expected_value": ">100x",
+    "item_id": "CL-12",
+    "observed_value": {
+      "ood040_e2s_r1_pct": 66.4,
+      "random_r1_pct": 0.195,
+      "ratio_x": 340.51282051282055
+    },
+    "one_line_reason": null,
+    "runtime_seconds": 0.009,
+    "status": "pass",
+    "within_tolerance": true,
+    "script": "CL-12_v4_ood040_vs_random_ratio.py"
+  }
+]

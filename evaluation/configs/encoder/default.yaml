@@ -1,0 +1,3 @@
+---
+# Evaluation settings
+model_weight: null # None as default

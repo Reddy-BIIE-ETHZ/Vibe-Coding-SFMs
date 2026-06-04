@@ -1,0 +1,33 @@
+name: calm
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - black
+  - conda-lock
+  - hydra-core
+  - markdownlint-cli2
+  - matplotlib
+  - mdformat
+  - mypy
+  - numpy
+  - pandas
+  - pre-commit
+  - prettier
+  - pytest
+  - python=3.11
+  - pytorch==2.5.1
+  - pytorch-cuda=12.4
+  - pyyaml
+  - ruff
+  - scikit-learn
+  - sentencepiece
+  - shellcheck
+  - sphinx
+  - tox
+  - tqdm
+  - transformers=4.56.2
+  - wandb
+  - yamllint
+  - pip:
+      - docker-pycreds==0.4.0

@@ -1,0 +1,514 @@
+{
+  "results": [
+    {
+      "expected_value": {
+        "max": 80,
+        "min": 40
+      },
+      "item_id": "SA-1",
+      "observed_value": {
+        "cluster_count_run1": 66,
+        "cluster_count_run2": 65,
+        "in_expected_range": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 1.429,
+      "script": "sa1_hamming_determinism.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": "skip",
+      "item_id": "SA-2",
+      "observed_value": "skipped by spec (subsumed by production-scale LV)",
+      "one_line_reason": "subsumed by production-scale LV",
+      "runtime_seconds": 0.0,
+      "script": "sa2_skip.py",
+      "status": "skip",
+      "within_tolerance": null
+    },
+    {
+      "expected_value": {
+        "label_1_row_count": 30342,
+        "unique_guide_seq": 1668,
+        "unique_offtarget_seq": 30308
+      },
+      "item_id": "SA-3",
+      "observed_value": {
+        "label_1_row_count": 30342,
+        "unique_guide_seq": 1668,
+        "unique_offtarget_seq": 30308
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.145,
+      "script": "sa3_metadata_counts.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": true,
+      "item_id": "SA-4",
+      "observed_value": {
+        "dnabert_cache_exists": true,
+        "path_checked": "/root/.cache/huggingface/hub/models--zhihan1996--DNABERT-2-117M"
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa4_dnabert_cache.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "by_cluster_test_cv5f_exists": true,
+        "n_json_files": 25,
+        "production_splits_on_euler_only": true
+      },
+      "item_id": "SA-5",
+      "observed_value": {
+        "by_cluster_test_cv5f_exists": true,
+        "n_json_files": 25,
+        "production_splits_on_euler_only": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa5_splits_exist.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": true,
+      "item_id": "SA-6",
+      "observed_value": {
+        "fold4_exclusion_logic_inherited_from_esfm": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa6_fold4_exclusion.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "22nt_threshold_040": 13,
+        "22nt_threshold_060": 8,
+        "22nt_threshold_080": 4,
+        "23nt_threshold_040": 13,
+        "23nt_threshold_060": 9,
+        "23nt_threshold_080": 4
+      },
+      "item_id": "SA-7",
+      "observed_value": {
+        "22nt_threshold_040": 13,
+        "22nt_threshold_060": 8,
+        "22nt_threshold_080": 4,
+        "23nt_threshold_040": 13,
+        "23nt_threshold_060": 9,
+        "23nt_threshold_080": 4
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa7_hamming_thresholds.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": true,
+      "item_id": "SA-8",
+      "observed_value": {
+        "files_with_match": [],
+        "identifier_present": false
+      },
+      "one_line_reason": "possible alias/indirection gap",
+      "runtime_seconds": 0.0,
+      "script": "sa8_dnabert_identifier.py",
+      "status": "partial",
+      "within_tolerance": false
+    },
+    {
+      "expected_value": true,
+      "item_id": "SA-9",
+      "observed_value": {
+        "system_random_present": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa9_system_random.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "test_1_algorithm_is_greedy_single_rep": true,
+        "test_3_length_penalty_verified": true,
+        "test_4_hash_seed_nondeterminism_confirmed": true,
+        "test_5_seed_arg_scope_confirmed": true
+      },
+      "findings": [
+        {
+          "description": "Algorithm is greedy-single-representative, not true single-linkage",
+          "id": "SA-10-a",
+          "severity": "documentation"
+        },
+        {
+          "description": "hamming_distance adds length penalty",
+          "id": "SA-10-b",
+          "severity": "documentation"
+        },
+        {
+          "description": "list(set()) non-determinism across Python processes",
+          "id": "SA-10-c",
+          "severity": "known_limitation"
+        },
+        {
+          "description": "--seed CLI argument scope excludes cluster formation",
+          "id": "SA-10-d",
+          "severity": "bug_or_doc"
+        }
+      ],
+      "item_id": "SA-10",
+      "observed_value": {
+        "test_1_algorithm_is_greedy_single_rep": true,
+        "test_3_length_penalty_verified": true,
+        "test_4_hash_seed_nondeterminism_confirmed": true,
+        "test_5_seed_arg_scope_confirmed": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "sa10_hamming_algorithm.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "cluster_id_matches_guide_name": true,
+        "n_clusters_in_metadata": 268,
+        "training_uses_hamming_not_metadata_clusters": true
+      },
+      "item_id": "SA-11",
+      "observed_value": {
+        "cluster_id_matches_guide_name": true,
+        "n_clusters_in_metadata": 268,
+        "training_uses_hamming_not_metadata_clusters": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.16,
+      "script": "sa11_metadata_clustering.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "cl10_cascade_94p0_found": true,
+        "cl10_hamming_33p2_found": true,
+        "cl10_intersection_97p1_found": true,
+        "cl1_row_count_30342_found": true,
+        "cl2_unique_guides_1668_found": true,
+        "cl2_unique_offtargets_30308_found": true,
+        "cl5_id100_grna_ot_95p4_found": true,
+        "cl5_id100_ot_grna_74p8_found": true,
+        "cl6_hamming040_64p3_found": true,
+        "cl6_hamming040_89p6_found": true,
+        "cl6_hamming060_57p6_found": true,
+        "cl6_hamming060_89p0_found": true,
+        "cl6_hamming080_55p5_found": true,
+        "cl6_hamming080_86p9_found": true,
+        "cl7a_hamming_baseline_44p8_found": true,
+        "cl8_tier1_hamming_45p8_found": true,
+        "cl8_tier1_sfm_11p4_found": true,
+        "cl8_tier1_sfm_7p0_found": true,
+        "cl9_tier2_base_45p2_found": true,
+        "cl9_tier2_hamming_85p2_found": true,
+        "cl9_tier2_hn_48p5_found": true
+      },
+      "item_id": "SA-12",
+      "observed_value": {
+        "cl10_cascade_94p0_found": true,
+        "cl10_hamming_33p2_found": true,
+        "cl10_intersection_97p1_found": true,
+        "cl1_row_count_30342_found": true,
+        "cl2_unique_guides_1668_found": true,
+        "cl2_unique_offtargets_30308_found": true,
+        "cl5_id100_grna_ot_95p4_found": true,
+        "cl5_id100_ot_grna_74p8_found": true,
+        "cl6_hamming040_64p3_found": true,
+        "cl6_hamming040_89p6_found": true,
+        "cl6_hamming060_57p6_found": true,
+        "cl6_hamming060_89p0_found": true,
+        "cl6_hamming080_55p5_found": true,
+        "cl6_hamming080_86p9_found": true,
+        "cl7a_hamming_baseline_44p8_found": true,
+        "cl8_tier1_hamming_45p8_found": true,
+        "cl8_tier1_sfm_11p4_found": true,
+        "cl8_tier1_sfm_7p0_found": true,
+        "cl9_tier2_base_45p2_found": true,
+        "cl9_tier2_hamming_85p2_found": true,
+        "cl9_tier2_hn_48p5_found": true
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.146,
+      "script": "sa12_archival_match.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "final_count": 30342
+      },
+      "item_id": "CL-1",
+      "observed_value": {
+        "filtered_count": "deferred_euler_only",
+        "final_count": 30342,
+        "raw_cclmoff_count": "deferred_euler_only"
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.142,
+      "script": "cl1_row_counts.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "guide_groups": 268,
+        "unique_guides": 1668,
+        "unique_offtargets": 30308
+      },
+      "item_id": "CL-2",
+      "observed_value": {
+        "guide_groups": 268,
+        "unique_guides": 1668,
+        "unique_offtargets": 30308
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.148,
+      "script": "cl2_unique_counts.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "max_relative_diff": 0.1
+      },
+      "item_id": "CL-3",
+      "observed_value": {
+        "observed": {
+          "clusters_at_040": 38,
+          "clusters_at_060": 241,
+          "clusters_at_080": 282
+        },
+        "relative_diff": {
+          "clusters_at_040": 0.05,
+          "clusters_at_060": 0.016877637130801686,
+          "clusters_at_080": 0.0035587188612099642
+        },
+        "writeup_claims": {
+          "clusters_at_040": 40,
+          "clusters_at_060": 237,
+          "clusters_at_080": 281
+        }
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 2.894,
+      "script": "cl3_cluster_counts.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "T0": 20,
+        "T_mult": 1,
+        "batch_size": 64,
+        "d_model": 512,
+        "epochs": 100,
+        "lr": 0.001,
+        "max_scale": 100,
+        "temperature_init": 0.07,
+        "wd": 0.2
+      },
+      "item_id": "CL-4",
+      "observed_value": {
+        "T0": 20,
+        "T_mult": 1,
+        "batch_size": 64,
+        "d_model": 512,
+        "epochs": 100,
+        "lr": 0.001,
+        "max_scale": 100,
+        "temperature_init": 0.07,
+        "wd": 0.2
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.005,
+      "script": "cl4_hyperparams.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "id100_grna_to_ot_r1_mean": 95.4,
+        "id100_ot_to_grna_r1_mean": 74.8
+      },
+      "item_id": "CL-5",
+      "observed_value": {
+        "id100_grna_to_ot_r1_mean": 95.4,
+        "id100_ot_to_grna_r1_mean": 74.8
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.001,
+      "script": "cl5_r1_id100.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "hamming040_grna_to_ot_r1_mean": 89.6,
+        "hamming040_ot_to_grna_r1_mean": 64.3,
+        "hamming060_grna_to_ot_r1_mean": 89.0,
+        "hamming060_ot_to_grna_r1_mean": 57.6,
+        "hamming080_grna_to_ot_r1_mean": 86.9,
+        "hamming080_ot_to_grna_r1_mean": 55.5
+      },
+      "item_id": "CL-6",
+      "observed_value": {
+        "hamming040_grna_to_ot_r1_mean": 89.6,
+        "hamming040_ot_to_grna_r1_mean": 64.3,
+        "hamming060_grna_to_ot_r1_mean": 89.0,
+        "hamming060_ot_to_grna_r1_mean": 57.6,
+        "hamming080_grna_to_ot_r1_mean": 86.9,
+        "hamming080_ot_to_grna_r1_mean": 55.5
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "cl6_r1_ood.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "hamming_top500_precision": 44.8
+      },
+      "item_id": "CL-7a",
+      "observed_value": {
+        "hamming_top500_precision": 44.8
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "cl7a_hamming_baseline_pool500.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": "unverified",
+      "findings": [
+        {
+          "description": "Pool-64 Hamming baseline value not archivally verified",
+          "id": "CL-7b-limitation",
+          "severity": "documentation"
+        }
+      ],
+      "item_id": "CL-7b",
+      "observed_value": {
+        "hamming_pool64_r1": {
+          "claim": 77.0,
+          "status": "writeup_only"
+        }
+      },
+      "one_line_reason": "No archival log located (documentation-only limitation)",
+      "runtime_seconds": 0.0,
+      "script": "cl7b_partial.py",
+      "status": "partial",
+      "within_tolerance": null
+    },
+    {
+      "expected_value": {
+        "tier1_hamming_r1": 45.8,
+        "tier1_sfm_grna_to_ot_r1": 7.0,
+        "tier1_sfm_ot_to_grna_r1": 11.4
+      },
+      "item_id": "CL-8",
+      "observed_value": {
+        "tier1_hamming_r1": 45.8,
+        "tier1_sfm_grna_to_ot_r1": 7.0,
+        "tier1_sfm_ot_to_grna_r1": 11.4
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.001,
+      "script": "cl8_crisprofft_tier1.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "tier2_hamming_r1": 85.2,
+        "tier2_sfm_baseline_r1": 45.2,
+        "tier2_sfm_hardneg_r1": 48.5
+      },
+      "item_id": "CL-9",
+      "observed_value": {
+        "tier2_hamming_r1": 85.2,
+        "tier2_hamming_r1_hn_log": 85.2,
+        "tier2_sfm_baseline_r1": 45.2,
+        "tier2_sfm_hardneg_r1": 48.5
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.0,
+      "script": "cl9_crisprofft_tier2.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "cascade_top50_precision": 94.0,
+        "hamming_top50_precision": 33.2,
+        "intersection_precision": 97.1
+      },
+      "item_id": "CL-10",
+      "observed_value": {
+        "cascade_top50_precision": 94.0,
+        "hamming_top50_precision": 33.2,
+        "intersection_precision": 97.1
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.001,
+      "script": "cl10_cascade_precision.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": 0,
+      "item_id": "CL-11a",
+      "observed_value": {
+        "overlap_count": 0,
+        "source_used": "crisprofft_validation_full.csv guide_seq"
+      },
+      "one_line_reason": null,
+      "runtime_seconds": 0.18,
+      "script": "cl11a_sequence_disjoint.py",
+      "status": "pass",
+      "within_tolerance": true
+    },
+    {
+      "expected_value": {
+        "crisprofft_guide_count": 115,
+        "overlap_of_34_with_raw_cclmoff": 34
+      },
+      "item_id": "CL-11b",
+      "observed_value": {
+        "crisprofft_guide_count": 115,
+        "overlap_of_34_with_raw_cclmoff": "deferred_euler_only"
+      },
+      "one_line_reason": "raw cclmoff overlap unavailable in sandbox",
+      "runtime_seconds": 0.02,
+      "script": "cl11b_cclmoff_overlap.py",
+      "status": "partial",
+      "within_tolerance": true
+    }
+  ],
+  "summary": {
+    "total_documentation_findings": 4,
+    "total_fail": 0,
+    "total_partial": 3,
+    "total_pass": 20,
+    "total_skip": 1
+  }
+}

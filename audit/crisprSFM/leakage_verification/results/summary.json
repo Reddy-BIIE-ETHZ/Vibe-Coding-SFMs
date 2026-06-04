@@ -1,0 +1,26 @@
+{
+  "hamming_080": {
+    "max_mismatches": 4,
+    "n_folds": 5,
+    "leakage_fraction_mean": 0.0159,
+    "leakage_fraction_max": 0.0556,
+    "min_hamming_overall_min": 1,
+    "min_hamming_overall_max": 5
+  },
+  "hamming_060": {
+    "max_mismatches": 9,
+    "n_folds": 5,
+    "leakage_fraction_mean": 0.6578,
+    "leakage_fraction_max": 0.7604,
+    "min_hamming_overall_min": 1,
+    "min_hamming_overall_max": 1
+  },
+  "hamming_040": {
+    "max_mismatches": 13,
+    "n_folds": 5,
+    "leakage_fraction_mean": 0.9994,
+    "leakage_fraction_max": 1.0,
+    "min_hamming_overall_min": 1,
+    "min_hamming_overall_max": 1
+  }
+}

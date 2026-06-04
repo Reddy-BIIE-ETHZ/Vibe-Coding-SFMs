@@ -1,0 +1,184 @@
+{
+  "domain": "eSFM",
+  "per_fold_results": [
+    {
+      "split_method": "mmseqs_040",
+      "fold": 0,
+      "threshold": 0.4,
+      "test_unique_sequences": 37329,
+      "trainval_unique_sequences": 140060,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 2684840,
+      "max_pident": 1.0,
+      "claim_bound": 0.4,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_040",
+      "fold": 1,
+      "threshold": 0.4,
+      "test_unique_sequences": 38511,
+      "trainval_unique_sequences": 138878,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 2892433,
+      "max_pident": 1.0,
+      "claim_bound": 0.4,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_040",
+      "fold": 2,
+      "threshold": 0.4,
+      "test_unique_sequences": 36165,
+      "trainval_unique_sequences": 141224,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 2623197,
+      "max_pident": 1.0,
+      "claim_bound": 0.4,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_040",
+      "fold": 3,
+      "threshold": 0.4,
+      "test_unique_sequences": 33526,
+      "trainval_unique_sequences": 143863,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 2328409,
+      "max_pident": 1.0,
+      "claim_bound": 0.4,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_060",
+      "fold": 0,
+      "threshold": 0.6,
+      "test_unique_sequences": 34758,
+      "trainval_unique_sequences": 142631,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5042840,
+      "max_pident": 0.997,
+      "claim_bound": 0.6,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_060",
+      "fold": 1,
+      "threshold": 0.6,
+      "test_unique_sequences": 35398,
+      "trainval_unique_sequences": 141991,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 4921860,
+      "max_pident": 1.0,
+      "claim_bound": 0.6,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_060",
+      "fold": 2,
+      "threshold": 0.6,
+      "test_unique_sequences": 34164,
+      "trainval_unique_sequences": 143225,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 4942536,
+      "max_pident": 0.998,
+      "claim_bound": 0.6,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_060",
+      "fold": 3,
+      "threshold": 0.6,
+      "test_unique_sequences": 37626,
+      "trainval_unique_sequences": 139763,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5335569,
+      "max_pident": 1.0,
+      "claim_bound": 0.6,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_080",
+      "fold": 0,
+      "threshold": 0.8,
+      "test_unique_sequences": 35226,
+      "trainval_unique_sequences": 142163,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5460677,
+      "max_pident": 0.997,
+      "claim_bound": 0.8,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_080",
+      "fold": 1,
+      "threshold": 0.8,
+      "test_unique_sequences": 35720,
+      "trainval_unique_sequences": 141669,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5631401,
+      "max_pident": 0.998,
+      "claim_bound": 0.8,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_080",
+      "fold": 2,
+      "threshold": 0.8,
+      "test_unique_sequences": 35395,
+      "trainval_unique_sequences": 141994,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5595135,
+      "max_pident": 0.998,
+      "claim_bound": 0.8,
+      "passes": false
+    },
+    {
+      "split_method": "mmseqs_080",
+      "fold": 3,
+      "threshold": 0.8,
+      "test_unique_sequences": 34842,
+      "trainval_unique_sequences": 142547,
+      "mmseqs_coverage": 0.8,
+      "mmseqs_sensitivity": 7.5,
+      "hits_found": 5407787,
+      "max_pident": 0.993,
+      "claim_bound": 0.8,
+      "passes": false
+    }
+  ],
+  "per_threshold_max": {
+    "mmseqs_040": {
+      "threshold": 0.4,
+      "max_pident_across_folds": 1.0,
+      "claim_bound": 0.4,
+      "passes": false,
+      "fold_count": 4
+    },
+    "mmseqs_060": {
+      "threshold": 0.6,
+      "max_pident_across_folds": 1.0,
+      "claim_bound": 0.6,
+      "passes": false,
+      "fold_count": 4
+    },
+    "mmseqs_080": {
+      "threshold": 0.8,
+      "max_pident_across_folds": 0.998,
+      "claim_bound": 0.8,
+      "passes": false,
+      "fold_count": 4
+    }
+  }
+}

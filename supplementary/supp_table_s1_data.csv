@@ -1,0 +1,265 @@
+sfm,threshold,fold,direction_code,direction_biological,r_at_1,r_at_5,r_at_10,note
+tSFM,identity_100,0,ag2ab,TF→DNA,81.5,98.8,99.9,
+tSFM,identity_100,1,ag2ab,TF→DNA,84.6,98.7,99.5,
+tSFM,identity_100,2,ag2ab,TF→DNA,79.9,98.5,99.0,
+tSFM,identity_100,3,ag2ab,TF→DNA,86.5,99.6,100.0,
+tSFM,identity_100,4 *,ag2ab,TF→DNA,27.8,66.5,81.0,
+tSFM,identity_100,mean_0-3,ag2ab,TF→DNA,83.1 ± 3.0,98.9 ± 0.4,99.6 ± 0.5,folds 0-3 (fold 4 excluded — degenerate val set)
+tSFM,identity_100,0,ab2ag,DNA→TF,27.5,45.6,52.1,
+tSFM,identity_100,1,ab2ag,DNA→TF,27.4,47.1,56.5,
+tSFM,identity_100,2,ab2ag,DNA→TF,22.3,41.6,51.2,
+tSFM,identity_100,3,ab2ag,DNA→TF,26.1,45.8,55.5,
+tSFM,identity_100,4 *,ab2ag,DNA→TF,4.5,14.1,22.0,
+tSFM,identity_100,mean_0-3,ab2ag,DNA→TF,25.8 ± 2.5,45.0 ± 2.3,53.8 ± 2.6,folds 0-3 (fold 4 excluded — degenerate val set)
+tSFM,mmseqs_080,0,ag2ab,TF→DNA,62.2,86.7,91.5,
+tSFM,mmseqs_080,1,ag2ab,TF→DNA,52.7,74.6,85.2,
+tSFM,mmseqs_080,2,ag2ab,TF→DNA,48.5,78.8,87.1,
+tSFM,mmseqs_080,3,ag2ab,TF→DNA,53.5,80.7,86.1,
+tSFM,mmseqs_080,4 *,ag2ab,TF→DNA,56.5,74.6,80.8,
+tSFM,mmseqs_080,mean_0-4,ag2ab,TF→DNA,54.7 ± 5.1,79.1 ± 5.0,86.1 ± 3.8,5-fold mean
+tSFM,mmseqs_080,0,ab2ag,DNA→TF,13.8,24.5,32.4,
+tSFM,mmseqs_080,1,ab2ag,DNA→TF,11.9,20.1,28.1,
+tSFM,mmseqs_080,2,ab2ag,DNA→TF,7.9,12.4,20.0,
+tSFM,mmseqs_080,3,ab2ag,DNA→TF,7.4,13.6,21.8,
+tSFM,mmseqs_080,4 *,ab2ag,DNA→TF,10.1,18.0,25.2,
+tSFM,mmseqs_080,mean_0-4,ab2ag,DNA→TF,10.2 ± 2.7,17.7 ± 4.9,25.5 ± 5.0,5-fold mean
+tSFM,mmseqs_060,0,ag2ab,TF→DNA,49.7,74.7,83.3,
+tSFM,mmseqs_060,1,ag2ab,TF→DNA,49.0,79.9,87.2,
+tSFM,mmseqs_060,2,ag2ab,TF→DNA,52.3,77.3,86.5,
+tSFM,mmseqs_060,3,ag2ab,TF→DNA,56.4,82.4,89.0,
+tSFM,mmseqs_060,4 *,ag2ab,TF→DNA,60.8,85.3,90.0,
+tSFM,mmseqs_060,mean_0-4,ag2ab,TF→DNA,53.7 ± 4.9,79.9 ± 4.2,87.2 ± 2.6,5-fold mean
+tSFM,mmseqs_060,0,ab2ag,DNA→TF,9.2,16.0,22.4,
+tSFM,mmseqs_060,1,ab2ag,DNA→TF,5.5,13.9,20.7,
+tSFM,mmseqs_060,2,ab2ag,DNA→TF,8.7,16.0,22.3,
+tSFM,mmseqs_060,3,ab2ag,DNA→TF,8.7,17.6,24.0,
+tSFM,mmseqs_060,4 *,ab2ag,DNA→TF,11.2,20.3,26.7,
+tSFM,mmseqs_060,mean_0-4,ab2ag,DNA→TF,8.6 ± 2.0,16.7 ± 2.4,23.2 ± 2.3,5-fold mean
+tSFM,mmseqs_040,0,ag2ab,TF→DNA,52.7,76.0,84.9,
+tSFM,mmseqs_040,1,ag2ab,TF→DNA,44.2,74.8,83.7,
+tSFM,mmseqs_040,2,ag2ab,TF→DNA,50.7,77.4,88.4,
+tSFM,mmseqs_040,3,ag2ab,TF→DNA,51.0,77.6,88.3,
+tSFM,mmseqs_040,4 *,ag2ab,TF→DNA,43.3,70.8,82.4,
+tSFM,mmseqs_040,mean_0-4,ag2ab,TF→DNA,48.4 ± 4.3,75.3 ± 2.8,85.5 ± 2.7,5-fold mean
+tSFM,mmseqs_040,0,ab2ag,DNA→TF,9.7,18.9,25.5,
+tSFM,mmseqs_040,1,ab2ag,DNA→TF,6.6,14.6,22.2,
+tSFM,mmseqs_040,2,ab2ag,DNA→TF,5.5,10.9,17.7,
+tSFM,mmseqs_040,3,ab2ag,DNA→TF,8.1,13.3,19.1,
+tSFM,mmseqs_040,4 *,ab2ag,DNA→TF,7.6,15.1,21.2,
+tSFM,mmseqs_040,mean_0-4,ab2ag,DNA→TF,7.5 ± 1.6,14.6 ± 2.9,21.1 ± 3.0,5-fold mean
+eSFM,identity_100,0,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,1,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,2,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,3,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,4,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,mean_0-3,ag2ab,S→E,61.8 ± 0.4,88.2 ± 0.2,93.5 ± 0.5,CL-verified writeup means (folds 0-3)
+eSFM,identity_100,0,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,1,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,2,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,3,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,4,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,identity_100,mean_0-3,ab2ag,E→S,86.3 ± 1.5,95.3 ± 1.0,97.1 ± 0.8,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_080,0,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,1,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,2,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,3,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,4,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,mean_0-3,ag2ab,S→E,58.6 ± 2.2,84.1 ± 1.3,90.1 ± 1.2,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_080,0,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,1,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,2,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,3,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,4,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_080,mean_0-3,ab2ag,E→S,85.0 ± 1.5,94.0 ± 1.2,95.6 ± 1.0,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_060,0,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,1,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,2,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,3,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,4,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,mean_0-3,ag2ab,S→E,53.9 ± 2.5,79.7 ± 3.0,86.7 ± 2.4,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_060,0,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,1,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,2,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,3,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,4,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_060,mean_0-3,ab2ag,E→S,81.0 ± 1.9,92.1 ± 1.6,94.6 ± 1.0,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_040,0,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,1,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,2,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,3,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,4,ag2ab,S→E,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,mean_0-3,ag2ab,S→E,40.6 ± 3.0,64.0 ± 3.4,73.0 ± 3.0,CL-verified writeup means (folds 0-3)
+eSFM,mmseqs_040,0,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,1,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,2,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,3,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,4,ab2ag,E→S,N/A,N/A,N/A,per-fold values not archived
+eSFM,mmseqs_040,mean_0-3,ab2ag,E→S,66.4 ± 3.3,79.2 ± 2.1,83.4 ± 1.9,CL-verified writeup means (folds 0-3)
+mhcSFM,identity_100,0,ag2ab,peptide→allele,64.6,77.0,79.8,
+mhcSFM,identity_100,1,ag2ab,peptide→allele,65.9,78.8,81.8,
+mhcSFM,identity_100,2,ag2ab,peptide→allele,63.3,76.6,80.6,
+mhcSFM,identity_100,3,ag2ab,peptide→allele,68.0,80.2,85.4,
+mhcSFM,identity_100,4 *,ag2ab,peptide→allele,63.9,79.6,81.3,
+mhcSFM,identity_100,mean_0-4,ag2ab,peptide→allele,65.1 ± 1.9,78.4 ± 1.6,81.8 ± 2.2,5-fold mean
+mhcSFM,identity_100,0,ab2ag,allele→peptide,95.0,99.4,99.5,
+mhcSFM,identity_100,1,ab2ag,allele→peptide,94.5,99.9,100.0,
+mhcSFM,identity_100,2,ab2ag,allele→peptide,93.4,99.2,99.5,
+mhcSFM,identity_100,3,ab2ag,allele→peptide,95.0,99.7,100.0,
+mhcSFM,identity_100,4 *,ab2ag,allele→peptide,88.8,97.2,98.6,
+mhcSFM,identity_100,mean_0-4,ab2ag,allele→peptide,93.3 ± 2.6,99.1 ± 1.1,99.5 ± 0.6,5-fold mean
+mhcSFM,mmseqs_080,0,ag2ab,peptide→allele,71.5,94.0,94.6,
+mhcSFM,mmseqs_080,1,ag2ab,peptide→allele,68.3,91.2,91.9,
+mhcSFM,mmseqs_080,2,ag2ab,peptide→allele,54.9,82.6,82.6,
+mhcSFM,mmseqs_080,3,ag2ab,peptide→allele,67.5,96.8,97.3,
+mhcSFM,mmseqs_080,4 *,ag2ab,peptide→allele,77.4,97.5,98.0,
+mhcSFM,mmseqs_080,mean_0-4,ag2ab,peptide→allele,67.9 ± 8.3,92.4 ± 6.0,92.9 ± 6.2,5-fold mean
+mhcSFM,mmseqs_080,0,ab2ag,allele→peptide,97.2,98.3,99.2,
+mhcSFM,mmseqs_080,1,ab2ag,allele→peptide,94.7,98.9,100.0,
+mhcSFM,mmseqs_080,2,ab2ag,allele→peptide,90.4,94.9,96.7,
+mhcSFM,mmseqs_080,3,ab2ag,allele→peptide,99.3,100.0,100.0,
+mhcSFM,mmseqs_080,4 *,ab2ag,allele→peptide,99.1,100.0,100.0,
+mhcSFM,mmseqs_080,mean_0-4,ab2ag,allele→peptide,96.1 ± 3.7,98.4 ± 2.1,99.2 ± 1.4,5-fold mean
+mhcSFM,mmseqs_060,0,ag2ab,peptide→allele,75.9,97.4,97.6,
+mhcSFM,mmseqs_060,1,ag2ab,peptide→allele,62.5,86.6,87.2,
+mhcSFM,mmseqs_060,2,ag2ab,peptide→allele,74.3,99.5,99.5,
+mhcSFM,mmseqs_060,3,ag2ab,peptide→allele,71.9,98.5,98.5,
+mhcSFM,mmseqs_060,4 *,ag2ab,peptide→allele,61.6,86.9,87.3,
+mhcSFM,mmseqs_060,mean_0-4,ag2ab,peptide→allele,69.2 ± 6.7,93.8 ± 6.5,94.0 ± 6.2,5-fold mean
+mhcSFM,mmseqs_060,0,ab2ag,allele→peptide,98.0,98.9,99.0,
+mhcSFM,mmseqs_060,1,ab2ag,allele→peptide,91.3,96.6,99.3,
+mhcSFM,mmseqs_060,2,ab2ag,allele→peptide,96.1,97.9,98.8,
+mhcSFM,mmseqs_060,3,ab2ag,allele→peptide,99.7,100.0,100.0,
+mhcSFM,mmseqs_060,4 *,ab2ag,allele→peptide,92.0,97.4,99.6,
+mhcSFM,mmseqs_060,mean_0-4,ab2ag,allele→peptide,95.4 ± 3.7,98.2 ± 1.3,99.3 ± 0.5,5-fold mean
+mhcSFM,zero_shot_rare_alleles,0,ag2ab,peptide→allele,53.2,88.5,91.8,14-allele zero-shot holdout (single fold)
+mhcSFM,zero_shot_rare_alleles,1,ag2ab,peptide→allele,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,2,ag2ab,peptide→allele,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,3,ag2ab,peptide→allele,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,4,ag2ab,peptide→allele,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,mean_0,ag2ab,peptide→allele,53.2 (n=1),88.5 (n=1),91.8 (n=1),single fold (folds 1-4 lack checkpoints)
+mhcSFM,zero_shot_rare_alleles,0,ab2ag,allele→peptide,95.4,99.3,100.0,14-allele zero-shot holdout (single fold)
+mhcSFM,zero_shot_rare_alleles,1,ab2ag,allele→peptide,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,2,ab2ag,allele→peptide,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,3,ab2ag,allele→peptide,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,4,ab2ag,allele→peptide,N/A,N/A,N/A,fold not evaluated
+mhcSFM,zero_shot_rare_alleles,mean_0,ab2ag,allele→peptide,95.4 (n=1),99.3 (n=1),100.0 (n=1),single fold (folds 1-4 lack checkpoints)
+crisprSFM,identity_100,0,ag2ab,gRNA→OT,98.6,99.7,100.0,
+crisprSFM,identity_100,1,ag2ab,gRNA→OT,99.0,99.5,99.5,
+crisprSFM,identity_100,2,ag2ab,gRNA→OT,98.8,99.8,100.0,
+crisprSFM,identity_100,3,ag2ab,gRNA→OT,98.1,99.5,99.5,
+crisprSFM,identity_100,4 *,ag2ab,gRNA→OT,82.4,94.4,96.0,
+crisprSFM,identity_100,mean_0-4,ag2ab,gRNA→OT,95.4 ± 6.5,98.6 ± 2.1,99.0 ± 1.5,5-fold mean (ddof=0)
+crisprSFM,identity_100,0,ab2ag,OT→gRNA,87.5,92.2,94.6,
+crisprSFM,identity_100,1,ab2ag,OT→gRNA,87.7,94.2,95.5,
+crisprSFM,identity_100,2,ab2ag,OT→gRNA,82.8,90.5,93.1,
+crisprSFM,identity_100,3,ab2ag,OT→gRNA,81.3,88.2,90.5,
+crisprSFM,identity_100,4 *,ab2ag,OT→gRNA,34.6,46.0,56.4,
+crisprSFM,identity_100,mean_0-4,ab2ag,OT→gRNA,74.8 ± 20.2,82.2 ± 18.2,86.0 ± 14.9,5-fold mean (ddof=0)
+crisprSFM,hamming_080,0,ag2ab,gRNA→OT,93.8,98.2,99.1,
+crisprSFM,hamming_080,1,ag2ab,gRNA→OT,90.9,96.0,98.6,
+crisprSFM,hamming_080,2,ag2ab,gRNA→OT,86.8,96.6,98.6,
+crisprSFM,hamming_080,3,ag2ab,gRNA→OT,87.9,96.3,98.3,
+crisprSFM,hamming_080,4 *,ag2ab,gRNA→OT,75.4,90.5,94.0,
+crisprSFM,hamming_080,mean_0-4,ag2ab,gRNA→OT,87.0 ± 6.3,95.5 ± 2.6,97.7 ± 1.9,5-fold mean (ddof=0)
+crisprSFM,hamming_080,0,ab2ag,OT→gRNA,73.1,84.6,89.0,
+crisprSFM,hamming_080,1,ab2ag,OT→gRNA,79.2,83.3,85.1,
+crisprSFM,hamming_080,2,ab2ag,OT→gRNA,45.9,58.3,65.3,
+crisprSFM,hamming_080,3,ab2ag,OT→gRNA,51.1,65.0,73.3,
+crisprSFM,hamming_080,4 *,ab2ag,OT→gRNA,28.2,42.1,49.7,
+crisprSFM,hamming_080,mean_0-4,ab2ag,OT→gRNA,55.5 ± 18.6,66.7 ± 16.0,72.5 ± 14.2,5-fold mean (ddof=0)
+crisprSFM,hamming_060,0,ag2ab,gRNA→OT,91.3,98.6,99.7,
+crisprSFM,hamming_060,1,ag2ab,gRNA→OT,93.9,99.6,100.0,
+crisprSFM,hamming_060,2,ag2ab,gRNA→OT,93.2,97.5,97.8,
+crisprSFM,hamming_060,3,ag2ab,gRNA→OT,87.8,96.7,98.1,
+crisprSFM,hamming_060,4 *,ag2ab,gRNA→OT,79.0,92.6,95.9,
+crisprSFM,hamming_060,mean_0-4,ag2ab,gRNA→OT,89.0 ± 5.4,97.0 ± 2.4,98.3 ± 1.5,5-fold mean (ddof=0)
+crisprSFM,hamming_060,0,ab2ag,OT→gRNA,63.8,79.2,85.6,
+crisprSFM,hamming_060,1,ab2ag,OT→gRNA,67.9,80.5,85.8,
+crisprSFM,hamming_060,2,ab2ag,OT→gRNA,70.4,80.8,84.5,
+crisprSFM,hamming_060,3,ab2ag,OT→gRNA,53.4,67.7,73.5,
+crisprSFM,hamming_060,4 *,ab2ag,OT→gRNA,32.6,44.9,54.2,
+crisprSFM,hamming_060,mean_0-4,ab2ag,OT→gRNA,57.6 ± 13.8,70.6 ± 13.7,76.7 ± 12.2,5-fold mean (ddof=0)
+crisprSFM,hamming_040,0,ag2ab,gRNA→OT,94.4,98.8,99.5,
+crisprSFM,hamming_040,1,ag2ab,gRNA→OT,91.3,95.1,96.7,
+crisprSFM,hamming_040,2,ag2ab,gRNA→OT,97.2,99.5,99.5,
+crisprSFM,hamming_040,3,ag2ab,gRNA→OT,90.4,97.8,99.0,
+crisprSFM,hamming_040,4 *,ag2ab,gRNA→OT,74.8,88.6,92.8,
+crisprSFM,hamming_040,mean_0-4,ag2ab,gRNA→OT,89.6 ± 7.8,96.0 ± 4.0,97.5 ± 2.6,5-fold mean (ddof=0)
+crisprSFM,hamming_040,0,ab2ag,OT→gRNA,74.2,87.1,89.7,
+crisprSFM,hamming_040,1,ab2ag,OT→gRNA,71.5,80.9,83.7,
+crisprSFM,hamming_040,2,ab2ag,OT→gRNA,73.2,86.2,92.2,
+crisprSFM,hamming_040,3,ab2ag,OT→gRNA,71.1,80.3,84.0,
+crisprSFM,hamming_040,4 *,ab2ag,OT→gRNA,31.6,40.3,48.7,
+crisprSFM,hamming_040,mean_0-4,ab2ag,OT→gRNA,64.3 ± 16.4,75.0 ± 17.5,79.7 ± 15.8,5-fold mean (ddof=0)
+mir-SFM,identity_100,0,ag2ab,miRNA→target,98.4,100.0,100.0,
+mir-SFM,identity_100,1,ag2ab,miRNA→target,98.1,100.0,100.0,
+mir-SFM,identity_100,2,ag2ab,miRNA→target,98.5,100.0,100.0,
+mir-SFM,identity_100,3,ag2ab,miRNA→target,98.3,100.0,100.0,
+mir-SFM,identity_100,4 *,ag2ab,miRNA→target,96.8,100.0,100.0,
+mir-SFM,identity_100,mean_0-4,ag2ab,miRNA→target,98.0 ± 0.6,100.0 ± 0.0,100.0 ± 0.0,5-fold mean (ddof=0)
+mir-SFM,identity_100,0,ab2ag,target→miRNA,26.4,56.3,70.9,
+mir-SFM,identity_100,1,ab2ag,target→miRNA,26.4,56.0,70.5,
+mir-SFM,identity_100,2,ab2ag,target→miRNA,27.2,57.6,71.5,
+mir-SFM,identity_100,3,ab2ag,target→miRNA,29.5,58.3,71.5,
+mir-SFM,identity_100,4 *,ab2ag,target→miRNA,17.3,38.6,53.0,
+mir-SFM,identity_100,mean_0-4,ab2ag,target→miRNA,25.4 ± 4.2,53.4 ± 7.4,67.5 ± 7.2,5-fold mean (ddof=0)
+mir-SFM,mmseqs_080,0,ag2ab,miRNA→target,98.8,99.4,99.5,
+mir-SFM,mmseqs_080,1,ag2ab,miRNA→target,99.8,100.0,100.0,
+mir-SFM,mmseqs_080,2,ag2ab,miRNA→target,99.9,100.0,100.0,
+mir-SFM,mmseqs_080,3,ag2ab,miRNA→target,99.7,100.0,100.0,
+mir-SFM,mmseqs_080,4 *,ag2ab,miRNA→target,99.8,100.0,100.0,
+mir-SFM,mmseqs_080,mean_0-4,ag2ab,miRNA→target,99.6 ± 0.4,99.9 ± 0.3,99.9 ± 0.2,5-fold mean (ddof=0)
+mir-SFM,mmseqs_080,0,ab2ag,target→miRNA,64.0,99.3,99.3,
+mir-SFM,mmseqs_080,1,ab2ag,target→miRNA,67.2,99.8,99.8,
+mir-SFM,mmseqs_080,2,ab2ag,target→miRNA,76.4,100.0,100.0,
+mir-SFM,mmseqs_080,3,ab2ag,target→miRNA,65.7,100.0,100.0,
+mir-SFM,mmseqs_080,4 *,ab2ag,target→miRNA,70.7,100.0,100.0,
+mir-SFM,mmseqs_080,mean_0-4,ab2ag,target→miRNA,68.8 ± 4.4,99.8 ± 0.3,99.8 ± 0.3,5-fold mean (ddof=0)
+dtSFM,identity_100,0,ag2ab,drug→target,23.3,40.5,45.4,
+dtSFM,identity_100,1,ag2ab,drug→target,25.3,42.3,47.6,
+dtSFM,identity_100,2,ag2ab,drug→target,31.3,44.0,47.1,
+dtSFM,identity_100,3,ag2ab,drug→target,26.9,40.1,43.9,
+dtSFM,identity_100,4 *,ag2ab,drug→target,31.6,46.0,49.5,
+dtSFM,identity_100,mean_0-4,ag2ab,drug→target,27.7 ± 3.3,42.6 ± 2.2,46.7 ± 1.9,5-fold mean (ddof=0)
+dtSFM,identity_100,0,ab2ag,target→drug,49.5,58.5,63.5,
+dtSFM,identity_100,1,ab2ag,target→drug,50.9,61.0,66.9,
+dtSFM,identity_100,2,ab2ag,target→drug,65.6,76.3,80.5,
+dtSFM,identity_100,3,ab2ag,target→drug,65.8,75.7,79.7,
+dtSFM,identity_100,4 *,ab2ag,target→drug,70.8,80.1,84.2,
+dtSFM,identity_100,mean_0-4,ab2ag,target→drug,60.5 ± 8.7,70.3 ± 8.8,74.9 ± 8.2,5-fold mean (ddof=0)
+dtSFM,mmseqs_080,0,ag2ab,drug→target,46.0,79.9,91.2,
+dtSFM,mmseqs_080,1,ag2ab,drug→target,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,2,ag2ab,drug→target,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,3,ag2ab,drug→target,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,4,ag2ab,drug→target,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,mean_0,ag2ab,drug→target,46.0 (n=1),79.9 (n=1),91.2 (n=1),single fold (folds 1-4 lack checkpoints)
+dtSFM,mmseqs_080,0,ab2ag,target→drug,95.7,95.8,95.9,
+dtSFM,mmseqs_080,1,ab2ag,target→drug,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,2,ab2ag,target→drug,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,3,ab2ag,target→drug,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,4,ab2ag,target→drug,N/A,N/A,N/A,fold not evaluated
+dtSFM,mmseqs_080,mean_0,ab2ag,target→drug,95.7 (n=1),95.8 (n=1),95.9 (n=1),single fold (folds 1-4 lack checkpoints)
+dtSFM,mmseqs_060,0,ag2ab,drug→target,49.0,66.6,92.3,
+dtSFM,mmseqs_060,1,ag2ab,drug→target,33.3,37.0,49.9,
+dtSFM,mmseqs_060,2,ag2ab,drug→target,39.9,50.3,70.5,
+dtSFM,mmseqs_060,3,ag2ab,drug→target,44.8,54.7,64.1,
+dtSFM,mmseqs_060,4 *,ag2ab,drug→target,18.3,27.7,33.7,
+dtSFM,mmseqs_060,mean_0-3,ag2ab,drug→target,37.1 ± 10.7,47.3 ± 13.6,62.1 ± 19.7,folds 0-3 (fold 4 excluded — degenerate val set)
+dtSFM,mmseqs_060,0,ab2ag,target→drug,96.4,97.3,97.6,
+dtSFM,mmseqs_060,1,ab2ag,target→drug,90.8,92.4,93.7,
+dtSFM,mmseqs_060,2,ab2ag,target→drug,91.1,92.1,92.9,
+dtSFM,mmseqs_060,3,ab2ag,target→drug,91.5,92.5,92.8,
+dtSFM,mmseqs_060,4 *,ab2ag,target→drug,2.1,9.8,16.0,
+dtSFM,mmseqs_060,mean_0-3,ab2ag,target→drug,74.4 ± 36.2,76.8 ± 33.6,78.6 ± 31.3,folds 0-3 (fold 4 excluded — degenerate val set)
+dtSFM,mmseqs_040,0,ag2ab,drug→target,31.1,36.5,45.0,
+dtSFM,mmseqs_040,1,ag2ab,drug→target,47.9,62.1,77.9,
+dtSFM,mmseqs_040,2,ag2ab,drug→target,18.9,22.7,27.2,
+dtSFM,mmseqs_040,3,ag2ab,drug→target,67.4,96.3,100.0,
+dtSFM,mmseqs_040,4 *,ag2ab,drug→target,8.7,15.7,20.6,
+dtSFM,mmseqs_040,mean_0-3,ag2ab,drug→target,34.8 ± 20.9,46.7 ± 29.5,54.1 ± 30.3,folds 0-3 (fold 4 excluded — degenerate val set)
+dtSFM,mmseqs_040,0,ab2ag,target→drug,76.3,79.3,79.8,
+dtSFM,mmseqs_040,1,ab2ag,target→drug,95.6,97.3,97.4,
+dtSFM,mmseqs_040,2,ab2ag,target→drug,61.5,63.4,67.4,
+dtSFM,mmseqs_040,3,ab2ag,target→drug,97.6,97.8,98.0,
+dtSFM,mmseqs_040,4 *,ab2ag,target→drug,2.2,6.8,10.7,
+dtSFM,mmseqs_040,mean_0-3,ab2ag,target→drug,66.6 ± 34.8,68.9 ± 33.6,70.7 ± 32.1,folds 0-3 (fold 4 excluded — degenerate val set)

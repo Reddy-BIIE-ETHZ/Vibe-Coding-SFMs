@@ -1,0 +1,11 @@
+---
+# Evaluation settings
+model_weight: null # None as default
+inference_dir: ???
+inference_file_indices: "indices.json"
+inference_target_antigen_name: "sars-cov-2"
+inference_direction: "ag2ab" # options: ag2ab, ab2ag
+decoder_model_weight: "model_checkpoint_epoch_100.pth"
+max_length_decode: 300
+inference_num_sequences: 1000
+num_beams: 1000

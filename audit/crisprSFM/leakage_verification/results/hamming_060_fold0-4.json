@@ -1,0 +1,67 @@
+[
+  {
+    "split_file": "split_hash_ids_outerfold_0_innerfold_0.json",
+    "n_train_val_unique": 1299,
+    "n_test_unique": 369,
+    "max_mismatches": 9,
+    "min_hamming_overall": 1,
+    "min_hamming_mean": 6.49,
+    "min_hamming_median": 9,
+    "n_leaked": 278,
+    "leakage_fraction": 0.7534,
+    "outer_fold": 0,
+    "inner_fold": 0
+  },
+  {
+    "split_file": "split_hash_ids_outerfold_1_innerfold_0.json",
+    "n_train_val_unique": 1328,
+    "n_test_unique": 340,
+    "max_mismatches": 9,
+    "min_hamming_overall": 1,
+    "min_hamming_mean": 6.29,
+    "min_hamming_median": 9,
+    "n_leaked": 217,
+    "leakage_fraction": 0.6382,
+    "outer_fold": 1,
+    "inner_fold": 0
+  },
+  {
+    "split_file": "split_hash_ids_outerfold_2_innerfold_0.json",
+    "n_train_val_unique": 1410,
+    "n_test_unique": 258,
+    "max_mismatches": 9,
+    "min_hamming_overall": 1,
+    "min_hamming_mean": 7.29,
+    "min_hamming_median": 9,
+    "n_leaked": 145,
+    "leakage_fraction": 0.562,
+    "outer_fold": 2,
+    "inner_fold": 0
+  },
+  {
+    "split_file": "split_hash_ids_outerfold_3_innerfold_0.json",
+    "n_train_val_unique": 1309,
+    "n_test_unique": 359,
+    "max_mismatches": 9,
+    "min_hamming_overall": 1,
+    "min_hamming_mean": 6.05,
+    "min_hamming_median": 8,
+    "n_leaked": 273,
+    "leakage_fraction": 0.7604,
+    "outer_fold": 3,
+    "inner_fold": 0
+  },
+  {
+    "split_file": "split_hash_ids_outerfold_4_innerfold_0.json",
+    "n_train_val_unique": 1348,
+    "n_test_unique": 320,
+    "max_mismatches": 9,
+    "min_hamming_overall": 1,
+    "min_hamming_mean": 7.13,
+    "min_hamming_median": 9,
+    "n_leaked": 184,
+    "leakage_fraction": 0.575,
+    "outer_fold": 4,
+    "inner_fold": 0
+  }
+]

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Data and checkpoints (large files go on Zenodo — see README)
+*.pt
+*.pth
+*.ckpt
+data/raw/
+data/processed/
+embeddings/
+*.npz
+
+# Large figures (rendered outputs)
+figures/*.pdf
+figures/*.png
+figures/*.svg
+supplementary/*.docx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+*.out
+*.err
+slurm-*.out
+
+# IDE
+.vscode/
+.idea/

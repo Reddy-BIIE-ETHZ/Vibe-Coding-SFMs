@@ -1,0 +1,13 @@
+{
+  "split_method": "mmseqs_080",
+  "fold": 0,
+  "threshold": 0.8,
+  "test_unique_sequences": 35226,
+  "trainval_unique_sequences": 142163,
+  "mmseqs_coverage": 0.8,
+  "mmseqs_sensitivity": 7.5,
+  "hits_found": 5460677,
+  "max_pident": 0.997,
+  "claim_bound": 0.8,
+  "passes": false
+}
