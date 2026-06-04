@@ -40,7 +40,7 @@ Random baseline at pool size 512: **0.2%**.
 
 The central theoretical result motivating the SFM architecture is that **transformer softmax attention is mathematically identical to the Boltzmann distribution** governing molecular binding at thermal equilibrium:
 
-$$\underbrace{\text{softmax}\!\left(\frac{QK^\top}{\sqrt{d}}\right)}_{\text{transformer attention}} \;=\; \underbrace{\frac{\exp(-E_{ij}/k_BT)}{\sum_j \exp(-E_{ij}/k_BT)}}_{\text{Boltzmann distribution (biophysics)}}$$
+$$\underbrace{\text{softmax}\left(\frac{QK^\top}{\sqrt{d}}\right)}_{\text{transformer attention}} = \underbrace{\frac{\exp(-E_{ij}/k_BT)}{\sum_j \exp(-E_{ij}/k_BT)}}_{\text{Boltzmann distribution (biophysics)}}$$
 
 This identity, together with five conditions of molecular recognition systems, prescribes a **single neural network architecture** for cross-modal binding prediction:
 
@@ -50,7 +50,7 @@ This identity, together with five conditions of molecular recognition systems, p
 4. Symmetric InfoNCE contrastive loss
 5. Learned physical temperature τ = k_BT
 
-$$\mathcal{L} = -\frac{1}{2N}\sum_{i=1}^{N}\!\left[\log\frac{e^{s_{ii}/\tau}}{\sum_j e^{s_{ij}/\tau}} + \log\frac{e^{s_{ii}/\tau}}{\sum_j e^{s_{ji}/\tau}}\right]$$
+$$\mathcal{L} = -\frac{1}{2N}\sum_{i=1}^{N}\left[\log\frac{e^{s_{ii}/\tau}}{\sum_j e^{s_{ij}/\tau}} + \log\frac{e^{s_{ii}/\tau}}{\sum_j e^{s_{ji}/\tau}}\right]$$
 
 Because the architecture is fully prescribed by the physics, what remains for the domain expert is **scientific judgment** — which encoders, which data — not ML engineering.
 
