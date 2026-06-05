@@ -2,8 +2,8 @@
 
 **Sai T. Reddy** · Department of Biosystems Science and Engineering, ETH Zurich · Botnar Institute of Immune Engineering (BIIE), Basel
 
-[![DOI](https://img.shields.io/badge/doi-TBD-blue)](https://doi.org/TBD)
-[![bioRxiv](https://img.shields.io/badge/bioRxiv-TBD-red)](https://biorxiv.org)
+[![DOI](https://img.shields.io/badge/DOI-10.64898%2F2026.06.04.730134-blue)](https://doi.org/10.64898/2026.06.04.730134)
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-2026.06.04.730134-red)](https://doi.org/10.64898/2026.06.04.730134)
 [![License](https://img.shields.io/badge/license-SFM%20Research%20Preview-green)](LICENSE.md)
 [![Models on HF](https://img.shields.io/badge/🤗%20Models-SFM--BIIE--ETHZ-yellow)](https://huggingface.co/SFM-BIIE-ETHZ)
 
@@ -82,7 +82,7 @@ Encoder pairs (pretrained backbone frozen; only FFN projection heads are trained
 
 ## Model Weights
 
-Pre-trained checkpoints for all six SFMs are available on Hugging Face (private until paper publication; made public at bioRxiv submission):
+Pre-trained checkpoints for all six SFMs are publicly available on Hugging Face:
 
 | SFM | Hugging Face repo |
 |-----|------------------|
@@ -192,12 +192,12 @@ Cross-validation: 5-fold stratified by clustering threshold (MMseqs2 for protein
 ## Citation
 
 ```bibtex
-@article{reddy2025vcsfm,
+@article{reddy2026vcsfm,
   title   = {Vibe Coding Specificity Foundation Models},
   author  = {Reddy, Sai T.},
   journal = {bioRxiv},
-  year    = {2025},
-  doi     = {TBD}
+  year    = {2026},
+  doi     = {10.64898/2026.06.04.730134}
 }
 ```
 
